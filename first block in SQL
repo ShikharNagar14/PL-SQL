@@ -1,0 +1,8 @@
+DECLARE
+     var varchar2(40) := 'I love GeeksForGeeks' ;
+ 
+ BEGIN
+     dbms_output.put_line(var);
+ 
+  END;
+  
