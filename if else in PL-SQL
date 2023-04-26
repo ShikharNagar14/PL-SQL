@@ -1,0 +1,12 @@
+Declare
+    num1 number(2);
+    num2 number(2);
+Begin 
+    num1:=:num1;
+    num2:=:num2;
+    if num1>num2 then
+        dbms_output.put_line('Greater number is='||num1);
+    else
+        dbms_output.put_line('Greater number is='||num2);
+ end if;
+end;
