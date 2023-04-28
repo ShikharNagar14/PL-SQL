@@ -1,0 +1,10 @@
+Declare
+  i number(2);
+Begin 
+ i:=:1;
+Loop
+  dbms_output.put_line(i);
+   i:=i+1;
+ exit when i>10;
+End loop;
+End
