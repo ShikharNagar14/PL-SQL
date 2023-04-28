@@ -1,0 +1,13 @@
+Declare 
+ a number(2);
+ n number(2);
+Begin 
+ a:=:a;
+ n:=1;
+while n<=10
+loop
+dbms_output.put_line(a||'*'||n||'='||a*n);
+n:=n+1;
+End loop;
+end;
+
