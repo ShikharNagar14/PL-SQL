@@ -1,0 +1,28 @@
+create or replace procedure calculator(a in number , b in number , c out number, d out number,e out number,f out number)
+IS
+begin
+c:=a+b;
+d:=a-b;
+e:=a*b;
+f:=a/b;
+End;
+
+
+Declare
+a number;
+b number;
+c number;
+d number;
+e number;
+f number;
+BEGIN
+a:=18;
+b:=6;
+calculator(a,b,c,d,e,f);
+
+dbms_output.put_line('Value of c '||c);
+dbms_output.put_line('Value of d '||d);
+dbms_output.put_line('Value of e '||e);
+dbms_output.put_line('Value of f '||f);
+end;
+
